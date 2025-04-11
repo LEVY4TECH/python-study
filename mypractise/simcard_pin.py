@@ -5,16 +5,17 @@
 # on each wrong attempt, inform the user the number of remaining attempts
 
 
-correct_pin='5496'
+correct_pin='1234'
 attempts=3
-for num in range(1,4):
-    pin=input('enter your pin: ')
+
+for i in range(1,4):
+    pin=input('Enter your pin: ')
     if pin==correct_pin:
-        print('welcome')
+        print('Welcome')
         break
     else:
-        remaining_attempts=attempts-num
+        remaining_attempts=attempts-i
         if remaining_attempts>0:
-            print(f'wrong pin, you have {remaining_attempts} attempts remaining')
+            print(f'Wrong pin! You have {remaining_attempts} remaining attempts')
         else:
-            print('simcard blocked')
+            print('Blocked! Get PUK')

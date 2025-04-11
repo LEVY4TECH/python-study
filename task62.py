@@ -38,7 +38,7 @@ for num in range(10,51):
             odd_numbers.append(num)
         else:
             break
-print(odd_numbers)
+        print(odd_numbers)
 # write a program that takes a number as input and prints its multiplication table up to 10 using a for loop.
 
 # number=int(input('Enter number: '))
