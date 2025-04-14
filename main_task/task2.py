@@ -2,11 +2,21 @@
 # Prompt the user for a number either on a form input or the terminal. Depending on whether the number is even or odd, display  either “odd” or “even” to the user.
 #  Hint: how does an even / odd number react differently when divided by 2?
 
-num=int(input('Enter a number: '))
+# num=int(input('Enter a number: '))
 
-if num%2==0:
-    results='even number'
-else:
-    results='odd number'
+# if num%2==0:
+#     results='even number'
+# else:
+#     results='odd number'
 
-print(results)
+# print(results)
+
+def odd_even(num):
+    if num%2==0:
+        res='even'
+    else:
+        res='odd'
+    return res
+    
+x=odd_even(6)
+print(x)

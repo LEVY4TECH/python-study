@@ -58,6 +58,8 @@ def largest(num1,num2,num3):
     
 x=largest(100,300,400)
 print(x)
+
+# making the program prompt the user to enter the number manually at the terminal 
 numb1=int(input('Enter a number: '))
 numb2=int(input('Enter a number: '))
 numb3=int(input('Enter a number: '))

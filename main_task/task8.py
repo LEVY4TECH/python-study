@@ -2,14 +2,30 @@
 # For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”
 
 
-speed=int(input('Enter car speed: '))
-speed_limit=70
+# speed=int(input('Enter car speed: '))
+# speed_limit=70
 
-if speed<70:
-    print('Ok')
-else:
-    points=(speed-speed_limit)//5
-    if points>12:
-        print('license Suspended')
+# if speed<70:
+#     print('Ok')
+# else:
+#     points=(speed-speed_limit)//5
+#     if points>12:
+#         print('license Suspended')
+#     else:
+#         print(f'points is {points}')
+
+
+def speed_checker(speed):
+    speed_limit=70
+    if speed<speed_limit:
+        return 'Ok'
     else:
-        print(f'points is {points}')
+        points=(speed-speed_limit)//5
+        if points>12:
+            return 'License Suspended'
+        else:
+            return f'Your points is {points}'
+        
+speed=int(input('Enter car speed: '))
+x=speed_checker(speed)
+print(x)
